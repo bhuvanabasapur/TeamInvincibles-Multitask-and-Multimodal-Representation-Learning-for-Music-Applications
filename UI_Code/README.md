@@ -1,24 +1,20 @@
-# musicguru-app
+# Musicguru-app
 
-## Project setup
+## Project setup instructions
 ```
+git clone git@github.com:bhuvanabasapur/TeamInvinsibles.git
+cd UI_Code
+pushd UI_Code
 yarn install
+popd
 ```
 
-### Compiles and hot-reloads for development
+### Compilation
 ```
 yarn serve
+OR
+npm run serve
 ```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## References
+* https://github.com/bearpelican/musicautobot_vueapp
+* https://auth0.com/blog/beginner-vuejs-tutorial-with-user-login/
