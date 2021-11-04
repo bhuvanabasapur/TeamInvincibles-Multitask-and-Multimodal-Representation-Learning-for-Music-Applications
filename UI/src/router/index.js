@@ -7,6 +7,7 @@ import SearchTable from '../components/controls/SearchTable.vue'
 import { shuffleSong } from '@/lib/songPresets'
 
 Vue.use(Router)
+const github = { template: '<div>github</div>'}
 
 var router = new Router({
   mode: 'history',
@@ -23,10 +24,15 @@ var router = new Router({
       component: () => import('../views/About.vue')
     },
     {
-      path: '/event/:id',
+      path: '/event/1',
       name: 'predict',
       component: Predict,
       redirect: '/shuffle'
+    },
+    {
+      path: '/event/2',
+      beforeEnter() {location.href = 'https://github.com/arpithagurumurthy/MusicGuru_Latest'},
+			component: github
     },
     {
       path: '/shuffle',

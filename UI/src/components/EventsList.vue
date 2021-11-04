@@ -40,7 +40,20 @@ export default {
         },
         {
           id: 2,
-          name: 'Translate melody to chords',
+          name: 'Link to colab',
+          // category: 'Adoptions',
+          // description: 'Come to our donation drive to help us replenish our stock of pet food, toys, bedding, etc. We will have live bands, games, food trucks, and much more.',
+          // featuredImage: 'https://github.com/arpithagurumurthy/VUE-Weather-App/blob/main/cold_screenshot.png',
+          // images: [
+          //   'https://github.com/arpithagurumurthy/VUE-Weather-App/blob/main/cold_screenshot.png'
+          // ],
+          // location: '1234 Dog Alley',
+          // date: '11-21-2019',
+          // time: '12:00'
+        },
+        {
+          id: 3,
+          name: 'Magenta Integration',
           // category: 'Adoptions',
           // description: 'Come to our donation drive to help us replenish our stock of pet food, toys, bedding, etc. We will have live bands, games, food trucks, and much more.',
           // featuredImage: 'https://placekitten.com/500/500',
