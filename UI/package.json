@@ -2,7 +2,7 @@
   "name": "musicguru-app",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:5000",
+  "proxy": "http://35.202.175.109:5000",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
