@@ -2,7 +2,7 @@
 <nav class="navbar container" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a class="navbar-item" href="/">
-      <strong class="is-size-4">Music Guru</strong>
+      <strong class="is-size-4">MusicGuru</strong>
     </a>
     <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
       <span aria-hidden="true"></span>
@@ -18,9 +18,17 @@
     <div class="navbar-end">
       <div class="navbar-item">
         <div class="buttons">
-          <a class="button is-dark">
-            <strong>Sign In</strong>
-          </a>
+          <!-- Check that the SDK client is not currently loading before accessing is methods -->
+          <div v-if="!$auth.loading">
+            <!-- show login when not authenticated -->
+            <a v-if="!$auth.isAuthenticated" @click="login" class="button is-dark"
+              ><strong>Sign in</strong></a
+            >
+            <!-- show logout when authenticated -->
+            <a v-if="$auth.isAuthenticated" @click="logout" class="button is-dark"
+              ><strong>Log out</strong></a
+            >
+          </div>
         </div>
       </div>
     </div>
@@ -29,7 +37,19 @@
 </template>
 <script>
 export default {
-    name: 'Nav'
+  name: 'Nav',
+  methods: {
+    // Log the user in
+    login() {
+      this.$auth.loginWithRedirect();
+    },
+    // Log the user out
+    logout() {
+      this.$auth.logout({
+        returnTo: window.location.origin
+      });
+    }
+  }
 }
 </script>
 <style lang="scss" scoped>
@@ -40,7 +60,7 @@ export default {
       font-weight: bold;
       color: #2c3e50;
       &.router-link-exact-active {
-        color: #d88d00;
+        color: #EC407A;
       }
     }  
   } 

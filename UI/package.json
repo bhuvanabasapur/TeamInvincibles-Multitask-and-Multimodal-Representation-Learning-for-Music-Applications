@@ -2,13 +2,14 @@
   "name": "musicguru-app",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:5000",
+  "proxy": "http://34.72.49.148:5000",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@auth0/auth0-spa-js": "^1.19.2",
     "@tonejs/midi": "^2.0.27",
     "axios": "^0.22.0",
     "bulma": "^0.9.3",

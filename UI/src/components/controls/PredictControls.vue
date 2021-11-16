@@ -91,6 +91,8 @@ export default {
 <style scoped>
 
 .control-group-header {
-  color: #FF5252;
+  color: #ec407a;
+  font-weight: 700;
+  font-style: italic;
 }
 </style>
