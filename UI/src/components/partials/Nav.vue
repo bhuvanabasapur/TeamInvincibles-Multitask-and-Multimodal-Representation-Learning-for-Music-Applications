@@ -2,7 +2,7 @@
 <nav class="navbar container" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a class="navbar-item" href="/">
-      <strong class="is-size-4">Music Guru</strong>
+      <strong class="is-size-4">MusicGuru</strong>
     </a>
     <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
       <span aria-hidden="true"></span>
@@ -60,7 +60,7 @@ export default {
       font-weight: bold;
       color: #2c3e50;
       &.router-link-exact-active {
-        color: #d88d00;
+        color: #EC407A;
       }
     }  
   } 

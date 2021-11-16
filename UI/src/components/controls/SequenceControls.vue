@@ -13,7 +13,7 @@
           id="bpm"
           v-model="selectBPM"
           class="control-group-slider"
-          color="pink"
+          color="pink lighten-2"
           :min="60"
           :max="200"
           :step="1"
@@ -21,7 +21,7 @@
         />
       </div>
 
-      <div class="control-group-control">
+      <!-- <div class="control-group-control">
         <div class="control-group-label">
           Instrument
         </div>
@@ -42,7 +42,7 @@
             Synth
           </v-btn>
         </v-btn-toggle>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
@@ -98,9 +98,13 @@ export default {
 
 .v-btn--active {
   color: #ec407a !important;
+  font-weight: 700;
+  font-style: italic;
 }
 .control-group-header {
   color: #ec407a;
+  font-weight: 700;
+  font-style: italic;
 }
 
 </style>

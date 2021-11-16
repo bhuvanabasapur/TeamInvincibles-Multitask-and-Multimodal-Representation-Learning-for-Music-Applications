@@ -8,7 +8,7 @@
     >
       New Song...
     </v-btn>
-    <v-btn
+    <!-- <v-btn
       v-if="!_.isEmpty(sid)"
       outlined
       small
@@ -16,7 +16,7 @@
       @click="restart"
     >
       Restart
-    </v-btn> 
+    </v-btn>  -->
 
     <v-dialog
       v-model="showDialog"
@@ -32,7 +32,7 @@
             hide-details
           />
           <v-spacer />
-          <v-btn
+          <!-- <v-btn
             outlined
             small
             color="pink lighten-1"
@@ -40,7 +40,7 @@
           >
             Shuffle
             <v-icon>shuffle</v-icon>
-          </v-btn>
+          </v-btn> -->
           <v-btn
             outlined
             small
@@ -57,7 +57,7 @@
               @change="loadLocalFile($event)"
             >
           </v-btn>
-          <v-btn
+          <!-- <v-btn
             outlined
             small
             color="pink lighten-1"
@@ -65,7 +65,7 @@
           >
             Blank
             <v-icon>create_new_folder</v-icon>
-          </v-btn>
+          </v-btn> -->
         </v-card-title>
         <v-data-table
           :headers="headers"
@@ -188,7 +188,6 @@ export default {
       this.showDialog = false
     },
     restart () {
-      // TODO: Currently throws an error if already on the same song. Perhaps we should reset any edited notes?
       this.$router.push({ path: `/song/${this.sid}` })
     },
     shuffle () {
