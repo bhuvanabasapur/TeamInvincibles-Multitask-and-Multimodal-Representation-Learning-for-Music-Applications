@@ -142,7 +142,7 @@ export const Presets = [
   },
   {
     sid: 'bb3324a9068db739eff1b2fc1cc0670b',
-    display: 'Bad Romance - Lady Gaga - Chorus',
+    display: 'Jingle Bells',
     seedLen: 12
   }
 ]

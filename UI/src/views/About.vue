@@ -37,33 +37,38 @@
       <h2>Below are some music tasks our MusicGuru can handle:</h2>
       <div class="content-body">
         <ol id="instruction-list">
-          <li>Melody Autocompletion!</li>
-          <li>Changing the pitch while keeping the rhythm constant!</li>
+          <li>Melody autocomplete: Users can give it a few notes to see how the application autocompletes the tune.</li>
+          <li>Harmonization: MusicGuru generates a new set of chord progression using the same melody.
+          </li>
+          <li>Melody generation: MusicGuru will detect the chord progression and will generate a new melody using the same chords.</li>
+          <li>Song remixing: Users can experiment with different pitches and rhythms for their tune.</li>
+          <!-- <li>Changing the pitch while keeping the rhythm constant!</li>
           <li>Changing the rhythm while keeping the pitch constant!</li>
           <li>Changing the melody of the song with the existing chord progression!</li>
-          <li>Changing the chords of the song with the existing melody progression!</li>
-          <li>Magenta</li>
+          <li>Changing the chords of the song with the existing melody progression!</li> -->
+          <li>Melody mixing using Google's Magenta</li>
         </ol>
       </div>
       
 
       <h2>What is it?</h2>
       <div class="content-body">
-        <p>MusicGuru is an application that uses a multitasking model called 'MusicAutoBot' trained on MIDI files, and Magenta's MusicVAE</p>
+        <p>MusicGuru is an application that uses a multitasking model called 'MusicAutoBot' trained on MIDI files, and Magenta's MusicVAE.</p>
         <h4>The multitasking model</h4>
         <p>Sequence to Sequence Transformer is the backbone for the Multitasking model. Since it consists of an encoder and a decoder, the encoder can be reused to train the required Bert model and the decoder can be reused to train the TransformerXL model. To understand more about these architectures, please refer to the Google AI Blogs: (<a href="https://ai.googleblog.com/2019/01/transformer-xl-unleashing-potential-of.html">TransformerXL</a>, <a href="https://ai.googleblog.com/2017/04/introducing-tf-seq2seq-open-source.html">SequenceToSequence</a>, and <a href="https://ai.googleblog.com/2018/11/open-sourcing-bert-state-of-art-pre.html">BERT</a>)</p>
-        
+          
       </div>
+
 
       <h2>Advanced Controls</h2>
       <div class="content-body">
         <h4>Seed length</h4>
         <ul>
           <li>Choose how much of the original song gets sent to the model for prediction</li>
-          <li>Longer snippets give the model a better idea of the style to play in. It'll generate something more coherent, but less creative</li>
+          <!-- <li>Longer snippets give the model a better idea of the style to play in. It'll generate something more coherent, but less creative</li> -->
         </ul>
         
-        <h4>
+        <!-- <h4>
           Grid editor
         </h4>
         The grid is a basic MIDI sequencer. Edit the song notes to generate even cooler music!
@@ -73,11 +78,11 @@
           <li>Change the note pitch by draging it up or down</li>
           <li>Change the note length by draging the ends of the note longer or shorter</li>
           <li>Remove a note by collapsing the note ends.</li>
-        </ul>
+        </ul> -->
         <h4 id="header-random">
           Creativity
         </h4>
-        Alter how wild and creative you want the generated music should be.
+        You can alter how wild and creative you want the generated music to be.
         <ul>
           <li>Pitch - amount of random variation in note pitch (C2, D2, E2, ..., F6, G6, A6)</li>
           <li>Rhythm - amount of random variation in note length (sixteenth, quarter, half notes)</li>
@@ -87,7 +92,7 @@
         </h4>
         <ul>
           <li>Change the BPM to play faster/slower.</li>
-          <li>Playback instrument. More coming soon!</li>
+          <!-- <li>Playback instrument. More coming soon!</li> -->
         </ul>
       </div>
     </div>
