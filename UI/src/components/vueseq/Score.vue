@@ -124,6 +124,7 @@ export default {
 <style scoped>
 
 .score {
+  /* background-image: url('../../assets/piano_notes.png'); */
   flex: 1;
   overflow-x: scroll;
   position: relative; /* Required for generate button absolute positioning */

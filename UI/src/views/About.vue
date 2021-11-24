@@ -9,7 +9,7 @@
       <h2>Instructions</h2>
       <div class="content-body">
         <ol id="instruction-list">
-          <li>Search and select a song you like to remix/explore to find the one that resonates with you!</li>
+          <li>Search and select a song you like to remix/explore to find the one that resonates with you in the MIDI format!</li>
           <li>
             Press the <v-btn
               color="pink lighten-3"
@@ -34,7 +34,7 @@
         </ol>
       </div>
 
-      <h2>Below are some downstream tasks our MusicGuru can handle:</h2>
+      <h2>Below are some music tasks our MusicGuru can handle:</h2>
       <div class="content-body">
         <ol id="instruction-list">
           <li>Melody Autocompletion!</li>
@@ -42,155 +42,17 @@
           <li>Changing the rhythm while keeping the pitch constant!</li>
           <li>Changing the melody of the song with the existing chord progression!</li>
           <li>Changing the chords of the song with the existing melody progression!</li>
+          <li>Magenta</li>
         </ol>
       </div>
-      <!-- <div class="content-body">
-        <v-btn-toggle
-          v-model="window"
-          class="control-group-toggle"
-          mandatory
-        >
-          <v-btn
-            v-for="(ptype, index) in predictionTypes"
-            :key="ptype.name"
-            text
-            :value="index"
-            color="pink lighten-2"
-          >
-            {{ ptype.displayName }}
-          </v-btn>
-        </v-btn-toggle> -->
-
-        <!-- <v-window
-          v-model="window"
-          class="elevation-1"
-        >
-          <v-window-item :key="0">
-            <v-card flat>
-              <v-card-text>
-                <div class="title">
-                  Start with few notes and continue the idea.
-                </div>
-                <ul>
-                  <li>
-                    <router-link to="/predict/e06828d196b2d5182cd459c273d609ac">
-                      Cannon in D - Pachelbel
-                    </router-link>
-                  </li>
-                  <li>
-                    <router-link to="/predict/3a68d55f76b2900ac1441ca357b057ab">
-                      Wake Me Up - Avicii
-                    </router-link>
-                  </li>
-                </ul>
-              </v-card-text>
-            </v-card>
-          </v-window-item>
-          <v-window-item :key="1">
-            <v-card flat>
-              <v-card-text>
-                <div class="title">
-                  Generate a new melody on top of an existing chord progression.
-                </div>
-                <ul>
-                  <li>
-                    <router-link to="/predict/551ca93cda1d2bdaa6e4d87888de893f">
-                      The Middle - Zedd
-                    </router-link>
-                  </li>
-                  <li>
-                    <router-link to="/predict/2674406ddc3eed0adaa47355d92a7e8f">
-                      Scary Monsters and Nice Sprites - Skrillex
-                    </router-link>
-                  </li>
-                </ul>
-              </v-card-text>
-            </v-card>
-          </v-window-item>
-          <v-window-item :key="2">
-            <v-card flat>
-              <v-card-text>
-                <div class="title">
-                  Add chords to your melody
-                </div>
-                <ul>
-                  <li>
-                    <router-link to="/predict/2b4f5e6613f366bad7b4f39c61be32b9">
-                      Where Is The Love - Black Eyed Peas
-                    </router-link>
-                  </li>
-                </ul>
-              </v-card-text>
-            </v-card>
-          </v-window-item>
-          <v-window-item :key="3">
-            <v-card flat>
-              <v-card-text>
-                <div class="title">
-                  Generate a completely new song in the exact same tempo as the original
-                </div>
-                <ul>
-                  <li>
-                    <router-link to="/predict/1bbfcb942133414a5664a35a7e7b5612">
-                      Levels - Avicii
-                    </router-link>
-                  </li>
-                </ul>
-              </v-card-text>
-            </v-card>
-          </v-window-item>
-          <v-window-item :key="4">
-            <v-card flat>
-              <v-card-text>
-                <div class="title">
-                  Same song, but with a remixed rhythm
-                </div>
-                <ul>
-                  <li>
-                    <router-link to="/predict/dd79fa52adaaed58a2945c1992ecada6">
-                      Fur Elise - Beethoven
-                    </router-link>
-                  </li>
-                  <li>
-                    <router-link to="/predict/71d7ff59f67fffa98614c841101e1b6b">
-                      Scary Monsters and Nice Sprites - Skrillex
-                    </router-link>
-                  </li>
-                </ul>
-              </v-card-text>
-            </v-card>
-          </v-window-item>
-        </v-window> -->
-      </div>
-
-      <!-- <h2>Note Types</h2>
-      <div class="content-body">
-        Here's what all the colors on the grid mean:
-        <ul>
-          <li><div class="note seed" /> = Seed notes. The model uses these to predict the next sequence.</li>
-          <li><div class="note generated" /> = Generated notes - they get replaced on every new prediction.</li>
-          <li><div class="note original" /> = Original notes of the song.</li>
-        </ul>
-      </div>
+      
 
       <h2>What is it?</h2>
       <div class="content-body">
-        <p>MusicAutobot is a music model trained on a bunch of MIDI music found on the internet.</p>
-        <h4>Deep Learning Model</h4>
-        Recent advances in deep learning has produced amazing <a href="https://transformer.huggingface.co/">results</a> in generating text.
-        <p>We apply those same principles to music generation. Our model is based on several different variations of the transformer (<a href="https://ai.googleblog.com/2019/01/transformer-xl-unleashing-potential-of.html">TransformerXL</a>, <a href="">SequenceToSequence</a>, and <a href="https://ai.googleblog.com/2018/11/open-sourcing-bert-state-of-art-pre.html">BERT</a>)</p>
-        <p>This allows us to do really cool things like song generation, harmonization, generating melodies, and remixing existing songs.</p>
-        <h4>Data</h4>
-        MIDI files gathered from the internet to train the model. Sources include - classical, jazz, pop and edm.
-        <br>
-        <h4>Blog Series</h4>
-        Inner workings are explained in more detail in this 4 part blog post:
-        <ul>
-          <li><a href="https://medium.com/@andrew.t.shaw/5867511b382a">Part I - Music Models</a></li>
-          <li><a href="https://medium.com/@andrew.t.shaw/755c62560ec2">Part II - Deep Dive</a></li>
-          <li><a href="https://medium.com/@andrew.t.shaw/3d80bd2ea08e">Part III - Multitask Models</a></li>
-          <li><a href="https://medium.com/@andrew.t.shaw/6b920359248c">Part IV - Remixing a Drop</a></li>
-        </ul>
+        <p>MusicGuru is an application that uses a multitasking model called 'MusicAutoBot' trained on MIDI files, and Magenta's MusicVAE</p>
+        <h4>The multitasking model</h4>
+        <p>Sequence to Sequence Transformer is the backbone for the Multitasking model. Since it consists of an encoder and a decoder, the encoder can be reused to train the required Bert model and the decoder can be reused to train the TransformerXL model. To understand more about these architectures, please refer to the Google AI Blogs: (<a href="https://ai.googleblog.com/2019/01/transformer-xl-unleashing-potential-of.html">TransformerXL</a>, <a href="https://ai.googleblog.com/2017/04/introducing-tf-seq2seq-open-source.html">SequenceToSequence</a>, and <a href="https://ai.googleblog.com/2018/11/open-sourcing-bert-state-of-art-pre.html">BERT</a>)</p>
+        
       </div>
 
       <h2>Advanced Controls</h2>
@@ -200,11 +62,7 @@
           <li>Choose how much of the original song gets sent to the model for prediction</li>
           <li>Longer snippets give the model a better idea of the style to play in. It'll generate something more coherent, but less creative</li>
         </ul>
-        <div id="about-seed">
-          &larr; Drag the brown dotted vertical line to change the seed length.
-          <br><div class="note seed" /> notes are used to predict the next sequence.
-          <br><div class="note generated" /> notes are overwritten with new predicted notes.
-        </div>
+        
         <h4>
           Grid editor
         </h4>
@@ -231,65 +89,8 @@
           <li>Change the BPM to play faster/slower.</li>
           <li>Playback instrument. More coming soon!</li>
         </ul>
-      </div> -->
-
-      <!-- <h2>
-        What's with the name? <img
-          id="icon-autobot"
-          src="@/assets/autobot_optimus.png"
-        >
-      </h2>
-      <div class="content-body">
-        This project is powerd by a Music Transformer<br>
-        Autobots are the coolest of all Transfromers.<br>
-        Music Transformer = MusicAutobot<br>
-      </div> -->
-
-      <!-- <h2>Source Code</h2>
-      <ul class="variation-list">
-        <li>
-          <a
-            href="https://github.com/bearpelican/musicautobot_vueapp"
-            target="_blank"
-          >Vue App</a>
-        </li>
-        <li>
-          <a
-            href="https://github.com/bearpelican/musicautobot"
-            target="_blank"
-          >Python Model</a>
-        </li>
-      </ul>
-
-      <h2>Acknowledgements</h2>
-
-      <ul class="variation-list">
-        <li>
-          <a
-            href="https://www.fast.ai/"
-            target="_blank"
-          >Fast.Ai</a>
-        </li>
-        <li>
-          <a
-            href="https://www.hooktheory.com/"
-            target="_blank"
-          >HookTheory</a>
-        </li>
-        <li>
-          <a
-            href="https://www.southparkcommons.com/"
-            target="_blank"
-          >South Park Commons</a>
-        </li>
-        <li>
-          <a
-            href="https://www.palapavc.com/"
-            target="_blank"
-          >Palapa Ventures</a>
-        </li>
-      </ul> -->
-    <!-- </div> -->
+      </div>
+    </div>
   </div>
 </template>
 
@@ -423,10 +224,10 @@ a {
 }
 
 #header-random {
-  color: #FF5252;
+  color: #F06292;
 }
 
 #header-playback {
-  color: #2196F3;
+  color: #F06292;
 }
 </style>

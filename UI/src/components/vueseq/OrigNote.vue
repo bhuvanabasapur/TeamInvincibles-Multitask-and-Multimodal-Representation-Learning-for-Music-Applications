@@ -73,8 +73,8 @@ export default {
     45deg,
     #56c721,
     #54c021 10px,
-    #fffeb0 10px,
-    #fffeb0 20px
+    #54c021 10px,
+    #54c021 20px
   );
 }
 </style>

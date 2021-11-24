@@ -25,6 +25,17 @@ var router = new Router({
       component: () => import('../views/About.vue')
     },
     {
+      path: '/demo',
+      name: 'demo',
+      component: () => import('../views/Demo.vue')
+    },
+    {
+      path: '/melodycomplete',
+      name: 'melodycomplete',
+      beforeEnter() {location.href = 'https://github.com/arpithagurumurthy/MusicGuru_Latest'},
+			component: github
+    },
+    {
       path: '/event/1',
       name: 'predict',
       component: Predict,
@@ -38,7 +49,7 @@ var router = new Router({
     },
     {
       path: '/event/3',
-      beforeEnter() {location.href = 'http://34.72.49.148:8081'},
+      beforeEnter() {location.href = 'http://127.0.0.1:8081'},
 			// component: () => import('/Users/arpitha/Documents/295B_Git/TeamInvinsibles/UI/src/demo_4/index.html')
     },
     {

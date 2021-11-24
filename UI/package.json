@@ -23,6 +23,7 @@
     "tone": "^14.7.77",
     "vue": "^2.6.11",
     "vue-analytics": "^5.22.1",
+    "vue-lazytube": "^1.0.2",
     "vue-lodash": "^2.1.2",
     "vue-router": "^3.2.0",
     "vue-search-select": "^2.9.5",

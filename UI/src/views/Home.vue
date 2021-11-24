@@ -4,22 +4,29 @@
     <div class="hero-body">
       <div class="container">
         <!-- <h1 class="title"> -->
+        <div style="float: left; font-size:180%;"> Autocomplete a melody</div>
+        <div style="float: right; font-size:180%;">Share with friends</div>
+        <div style="float: center; font-size:180%;">Change Pitch/Rhythm/Chords of a Song</div>
         <h1>
           Welcome to MusicGuru        
         </h1>
-        <h2 class="subtitle">
+        
+        <!-- <h2 class="subtitle">
           Make sure to explore music guru's features!
-        </h2>
+        </h2> -->
         <div class="button-block">
           <button v-if="!$auth.isAuthenticated" @click="login" class="button is-xl is-dark">Sign Up to Browse Events</button>
           <h3 v-if="$auth.isAuthenticated" class="is-size-3 has-background-dark welcome">Welcome, {{ $auth.user.name }}!</h3>
         </div>
+        
+
       </div>
     </div>
   </section>
+  
   <EventsList />
 
-  <h4>Image references : https://in.pinterest.com/pin/758926974676671496/, https://www.post-gazette.com/ae/music/2020/07/24/Music-stress-relief-relaxation-therapy/stories/202007240101</h4>
+  
 </div>
 </template>
 <script>
