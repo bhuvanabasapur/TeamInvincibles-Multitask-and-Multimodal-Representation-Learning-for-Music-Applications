@@ -2,7 +2,7 @@
 
 ## Multi-task and Multi-modal Representation Learning for Music Applications (Masters Project - 295A and 295B)
 
-The MusicGuru application uses a multitasking model for performing various music related tasks. It uses a transformer based architecture for achieving the same. The model is deployed on the flask server which comes up on port 5000. The UI server comes up on port 8080. The predictions are then stored on the S3 bucket with an idea to make retrieval faster and store space. MusicGuru also has an authentication service using AuthO in order to respect user privacy.
+The MusicGuru application uses a multitasking model for performing various music related tasks. It uses a transformer based architecture for achieving the same. The model is deployed on the flask server which comes up on port 5000. The UI server comes up on port 8080. The predictions are then stored on the S3 bucket with an idea to make retrieval faster and store space. MusicGuru also has an authentication service using AuthO in order to respect user privacy. The application is also deployed on GCP.
 
 The MusicGuru application performs the below downstream tasks:
 * Melody Autocompletion
