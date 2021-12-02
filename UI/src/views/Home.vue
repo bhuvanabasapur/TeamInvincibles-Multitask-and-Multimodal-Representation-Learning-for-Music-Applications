@@ -4,9 +4,9 @@
     <div class="hero-body">
       <div class="container">
         <!-- <h1 class="title"> -->
-        <div style="float: left; font-size:180%;"> Autocomplete a melody</div>
-        <div style="float: right; font-size:180%;">Share with friends</div>
-        <div style="float: center; font-size:180%;">Change Pitch/Rhythm/Chords of a Song</div>
+        <div style="float: left; font-size:180%; font-style: italic;"> Autocomplete a melody</div>
+        <div style="float: right; font-size:180%; font-style: italic;">Share with friends</div>
+        <div style="float: center; font-size:180%; font-style: italic;">Change Pitch/Rhythm/Chords of a Song</div>
         <h1>
           Welcome to MusicGuru        
         </h1>
@@ -23,7 +23,7 @@
       </div>
     </div>
   </section>
-  
+
   <EventsList />
 
   
@@ -77,6 +77,7 @@ export default {
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
     padding: 40px 0 20px 0;
     font-size: 60px;
+    
   }
   .subtitle {
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.7);

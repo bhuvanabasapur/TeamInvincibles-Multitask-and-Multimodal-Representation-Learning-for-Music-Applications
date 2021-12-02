@@ -44,7 +44,7 @@ var router = new Router({
     },
     {
       path: '/event/2',
-      beforeEnter() {location.href = 'https://github.com/arpithagurumurthy/MusicGuru_Latest'},
+      beforeEnter() {location.href = 'https://github.com/bhuvanabasapur/TeamInvinsibles/blob/main/MusicGuru_MultitaskingModel_AutoBot.ipynb'},
 			component: github
     },
     {
