@@ -1,48 +1,23 @@
-# MusicGuru Backend Flask application
+## For backend
 
+1. After cloning the repo, run the following to install dependencies:
 
-**Commands must be run inside the `scripts/` folder**
+```conda env update -f environment.yml```
 
-## Installation
+2. Install musescore
 
-2. Run:  
+ubuntu: ```sudo apt-get install musescore```
 
-```bash
-git clone https://github.com/bearpelican/musicautobot.git
+MAC: https://musescore.org/en/download
 
-cd musicautobot
+3. Running generateMusic.ipynb would require an empty directory named 'numpy' under data/, into which the data and model files would get loaded after execution.
 
-conda env update -f environment.yml
+**To bring up the flask server**
 
-source activate musicautobot
-```
+Under the folder 'serve', run the below command:
 
-3. Install Musescore - to view sheet music within a jupyter notebook  
+```python run.py```
 
-    Ubuntu:  
-    ```bash
-    sudo apt-get install musescore
-    ```
-    
-    MacOS - [download](https://musescore.org/en/download)
+**Pretrained Models**
 
-## Flask Server
-
-Installation:  
-```bash
-cd serve
-
-conda env update -f environment.yml
-```
-
-#### S3 Bucket
-
-Need to add
-
-## References
-
-This project is built on top of [fast.ai's](https://github.com/fastai/fastai) deep learning library and music21's incredible musicology [library](https://web.mit.edu/music21/).
-
-Inspired by [bachbot](https://github.com/feynmanliang/bachbot) and [clara](http://christinemcleavey.com/clara-a-neural-net-music-generator/)
-
-Special thanks to [SPC](https://southparkcommons.com) and [PalapaVC](https://www.palapavc.com/)
+Path: 'https://ashaw-midi-web-server.s3-us-west-2.amazonaws.com/pretrained/MultitaskSmallKeyC.pth'
