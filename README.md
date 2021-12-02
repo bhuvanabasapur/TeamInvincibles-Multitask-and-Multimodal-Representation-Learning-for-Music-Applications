@@ -1,4 +1,12 @@
 # TeamInvincibles
+## Team Members:
+Arpitha Gurumurthy
+
+Bhuvana Basapur
+
+Mayuri Lalwani
+
+Somya Mishra
 
 ## Multi-task and Multi-modal Representation Learning for Music Applications (Masters Project - 295A and 295B)
 
