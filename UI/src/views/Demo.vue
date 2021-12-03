@@ -13,18 +13,51 @@
         <ul>
             <li><h1>What is MusicGuru?</h1></li>
             <LazyYoutube ref="lazyVideo" src="https://www.youtube.com/watch?v=qD8sI_6L4Xo" />
+            <hr>
+
+            <hr>
+            <li><h1>Melody Autocomplete</h1></li>
+            <h2>What is Melody Autocomplete?</h2>
+            <LazyYoutube ref="lazyVideo" src="https://youtu.be/h-wVfe0Qibc" />
+
+            <h2>Original Jingle Bells track</h2>
+            <LazyYoutube ref="lazyVideo" src="https://youtu.be/uQoSsR-P5cg" />
+
+            <h2> MusicGuru's autocomplete version of Jingle Bells </h2>
+            <LazyYoutube ref="lazyVideo" src="https://youtu.be/CkDLoWX7KJc" />
+            <hr>
             
-            <li><h1>1. Melody Autocomplete</h1></li>
-            <LazyYoutube ref="lazyVideo" src="https://www.youtube.com/watch?v=j9lJmdL2imI" />
-
+            <hr>
             <li><h1>2. Melody to Chords and Chords to Melody</h1></li>
-            <LazyYoutube ref="lazyVideo" src="https://www.youtube.com/watch?v=ape3YixxTqY" />
+            <h2>What are Melodies and Chords?</h2>
+            <LazyYoutube ref="lazyVideo" src="https://youtu.be/cEvlXatHiEI" />
 
-            <li><h1>3. Changing Pitch/Rhythm</h1></li>
-            <LazyYoutube ref="lazyVideo" src="https://www.youtube.com/watch?v=3NHFz7u5Qgo" />
+            <h2>Original Jingle Bells track</h2>
+            <LazyYoutube ref="lazyVideo" src="https://youtu.be/qCtgK9ReVIs" />
 
+            <h2> MusicGuru's melody for Jingle Bells </h2>
+            <LazyYoutube ref="lazyVideo" src="https://youtu.be/1xN9q210MM8" />
+
+            <h2> MusicGuru's chords for Jingle Bells </h2>
+            <LazyYoutube ref="lazyVideo" src="https://youtu.be/pu8qRHjH-TI" />
+            <hr>
+            
+            <hr>
+            <li><h1>3. Changing Pitch/Rhythm and remixing the song</h1></li>
+            <h2>What is Pitch and Rhythm?</h2>
+            <LazyYoutube ref="lazyVideo" src="https://youtu.be/L4biYOMx7YU" />
+
+            <h2>Original Jingle Bells track</h2>
+            <LazyYoutube ref="lazyVideo" src="https://youtu.be/pNCEk0J4Tjw" />
+
+            <h2> MusicGuru's autocomplete version of Jingle Bells </h2>
+            <LazyYoutube ref="lazyVideo" src="https://youtu.be/PWY85Tjlf2k" />
+            <hr>
+
+            <hr>
             <li><h1>4. Melody Mixer</h1></li>
             <LazyYoutube ref="lazyVideo" src="https://www.youtube.com/watch?v=cJhI_MP8uG8" />
+            <hr>
         </ul>
       </div>
     </div>
@@ -88,7 +121,7 @@ h1 {
 }
 h2 {
   margin: 30px 0 10px 0;
-  color: #F06292;
+  color: #14090d;
   font-weight: 700;
   font-style: italic;
 }
