@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+  frontend:
+    image: music_genre_classification:frontend-latest
+    build:
+      context: frontend/
+      dockerfile: Dockerfile
+    environment:
+      NODE_ENV: production
+    ports:
+      - 3000:3000
+    restart: unless-stopped
+    depends_on:
+      - backend
+
+  backend:
+    image: music_genre_classification:backend-latest
+    build:
+      context: backend/
+      dockerfile: Dockerfile
+    ports:
+      - 5000:5000
+    restart: unless-stopped

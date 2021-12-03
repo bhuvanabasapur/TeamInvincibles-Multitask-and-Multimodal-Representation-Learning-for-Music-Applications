@@ -1,0 +1,20 @@
+body {
+    /* background-color: whitesmoke; */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+div.header {
+    width: 100%;
+    margin: 30px auto 30px auto;
+}
+
+h1.header {
+    text-align: center;
+    background-color: #808080;
+    color: lightgray;
+    padding: 10px;
+    font-weight: normal;
+    font-family: 'Dancing Script', cursive;
+    font-size: 4em;
+}
