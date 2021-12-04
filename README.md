@@ -20,6 +20,8 @@ The MusicGuru application performs the below downstream tasks:
 * Changing the chords of the song with the existing melody progression.
 * Music blending using Google Magenta's MusicVAE
 
+## **Team Invincibles Youtube channel for Demo Videos:** https://www.youtube.com/channel/UCoa8PSvXypx_o_07LNP0Xvg
+
 <img src="https://github.com/bhuvanabasapur/TeamInvinsibles/blob/main/Screenshots/Homescreen.png">
 
 ## For backend
